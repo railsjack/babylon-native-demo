@@ -162,9 +162,9 @@ android {
         }
         release {
             storeFile file('arveesio.keystore')
-            storePassword '*CR#P;>=ze42#]pU'
+            storePassword 'yourpass'
             keyAlias 'test'
-            keyPassword '*CR#P;>=ze42#]pU'
+            keyPassword 'yourpass'
         }
     }
     buildTypes {
