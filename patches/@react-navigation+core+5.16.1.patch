@@ -1,0 +1,13 @@
+diff --git a/node_modules/@react-navigation/core/lib/typescript/src/types.d.ts b/node_modules/@react-navigation/core/lib/typescript/src/types.d.ts
+index 5378a45..286aade 100644
+--- a/node_modules/@react-navigation/core/lib/typescript/src/types.d.ts
++++ b/node_modules/@react-navigation/core/lib/typescript/src/types.d.ts
+@@ -398,7 +398,7 @@ export declare type TypedNavigator<ParamList extends ParamListBase, State extend
+     /**
+      * Navigator component which manages the child screens.
+      */
+-    Navigator: React.ComponentType<Omit<React.ComponentProps<Navigator>, keyof DefaultNavigatorOptions<any, any>> & DefaultNavigatorOptions<ScreenOptions, ParamList>>;
++    Navigator: any;
+     /**
+      * Component used for specifying route configuration.
+      */

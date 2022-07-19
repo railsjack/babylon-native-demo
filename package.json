@@ -1,0 +1,63 @@
+{
+  "name": "arveesio",
+  "version": "1.9.13",
+  "description": "Arveesio application for 3D",
+  "private": true,
+  "scripts": {
+    "start_": "expo start --dev-client",
+    "start": "react-native start",
+    "android_": "expo run:android",
+    "android": "react-native run-android",
+    "ios_": "expo run:ios",
+    "ios__": "react-native run-ios --device=\"iPhone7\"",
+    "ios": "react-native run-ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "lint": "eslint .",
+    "tsc": "tsc -noEmit",
+    "release": "standard-version",
+    "postinstall_": "cp -Rf ./node_modules/win32-linux/node_modules/ ./node_modules; cp -Rf ./node_modules/darwin/node_modules/ ./node_modules",
+    "typedoc": "npx typedoc --out docs ./src",
+    "clean": "./android/gradlew clean"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.6.1",
+    "@babylonjs/loaders": "^5.6.1",
+    "@babylonjs/react-native": "^1.1.1",
+    "@babylonjs/react-native-iosandroid-0-64": "^1.1.1",
+    "@react-native-community/slider": "4.1.12",
+    "expo": "^43.0.0",
+    "expo-screen-orientation": "~4.0.3",
+    "react": "17.0.2",
+    "react-native": "0.64.0",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-permissions": "^3.3.1",
+    "react-native-vector-icons": "^9.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@types/jest": "^27.0.2",
+    "@types/react": "~17.0.2",
+    "@types/react-native": "~0.65.0",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "chalk": "^5.0.1",
+    "cross-env": "^7.0.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "metro-react-native-babel-preset": "^0.65.1",
+    "react-native-codegen": "^0.0.7",
+    "typescript": "~4.3.5"
+  },
+  "bugs": {
+    "url": "https://demo.com"
+  },
+  "homepage": "https://demo.com"
+}

@@ -1,0 +1,13 @@
+diff --git a/node_modules/@react-native-community/slider/typings/index.d.ts b/node_modules/@react-native-community/slider/typings/index.d.ts
+index 8e70168..bf51a21 100644
+--- a/node_modules/@react-native-community/slider/typings/index.d.ts
++++ b/node_modules/@react-native-community/slider/typings/index.d.ts
+@@ -153,5 +153,6 @@ export interface SliderProps extends SliderPropsIOS, SliderPropsAndroid, SliderP
+ */
+ declare class SliderComponent extends React.Component<SliderProps> {}
+ declare const SliderBase: ReactNative.Constructor<ReactNative.NativeMethodsMixin> & typeof SliderComponent;
+-export default class Slider extends SliderBase {}
++class Slider extends SliderBase {}
+ export type SliderIOS = Slider;
++export default Slider as any;
+\ No newline at end of file
